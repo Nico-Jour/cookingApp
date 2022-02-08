@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Main from "./components/Main";
+import "./app.css"
+
 
 import axios from "axios";
 import { Route, Routes } from "react-router-dom";
 
 export default function App() {
-  const [store, setStore] = useState({
+  let [store, setStore] = useState({
     recipes: {
       term: "all",
       recipes: []
@@ -30,13 +32,13 @@ export default function App() {
       const {
         data: { meals: recipes }
       } = await axios(url);
-
+      console.log(recipes);
       const newState = buildNewState("recipes", recipes);
 
       setStore(newState);
     }
 
-    fetchRecipes();
+   fetchRecipes();
   }, []);
 
   const handleChange = (term) => {
@@ -48,11 +50,12 @@ export default function App() {
   return (
     <div style={{ height: "100vh" }}>
       <Routes>
-        <Route path="/" element={<Main />} />
-        <Route
-          path="/header"
-          element={<Header onChange={handleChange} term={store.recipes.term} />}
-        />
+        <Route path="/" element={
+          <>
+          <Header onChange={handleChange} term={store.recipes.term} />
+          <Main recipes={store}/>
+          </>} />                      
+        
       </Routes>
     </div>
   );
