@@ -150,6 +150,20 @@ a:-webkit-any-link .backButton{
 }
 .container{
     height: 600px;
+    margin-top: 20px;
+}
+.ingredientQuantite {
+    display: flex;
+}
+.ingredients{
+    padding-inline-start: 20px;
+}
+.ingredient{
+    list-style: none;
+    
+}
+.quantite {
+    list-style: none;
 }
 
 

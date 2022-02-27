@@ -8,7 +8,7 @@ import Informations from './Informations';
 export default function RecipeDetails({ recipes }){
     const params = useParams();
     const selRecipe = recipes.recipes.recipes.find(recette => recette.idMeal===params.idMeal);
-    console.log(selRecipe);
+    
 
     return (
         <div>
