@@ -49,6 +49,10 @@ export default function Informations({selRecipe}) {
                 :
                 <div className="instructions">
                     <iframe width="500" height="283" src={selRecipe.strYoutube.replace('watch?v=','embed/')} title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <p className="instructions_paragraphe">
+                        {selRecipe.strInstructions}
+                    </p>
+                    <div className="footer"></div>
                 </div>
                 }   
             </div>

@@ -165,5 +165,6 @@ a:-webkit-any-link .backButton{
 .quantite {
     list-style: none;
 }
-
-
+.footer{
+    height: 200px;
+}

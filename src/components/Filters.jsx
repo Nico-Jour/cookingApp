@@ -3,7 +3,7 @@ import Filter from "./Filter"
 
 
 
-export default function Filters({recipes, onFilterTerm}) {
+export default function Filters({recipes, onFilterTerm, filter}) {
   const recipesTab= recipes.recipes.recipes;
   
 
@@ -13,11 +13,12 @@ export default function Filters({recipes, onFilterTerm}) {
   return ( 
   <div>
   <div className="filters">
-    <Filter category= "All" onFilterTerm={onFilterTerm}/>
-    {filtersList && filtersList.map((filter, index) => 
+    <Filter category= "All" onFilterTerm={onFilterTerm} filter={filter}/>
+    {filtersList && filtersList.map((strFilter, index) => 
       <Filter
-        category={filter}
+        category={strFilter}
         onFilterTerm={onFilterTerm}
+        filter={filter}
         key={index}  />)
         }
         

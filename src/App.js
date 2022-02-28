@@ -124,6 +124,7 @@ console.log(store.recipes);
           />
         </Route>
       </Routes>
+      <div className="footer"></div>
     </div>
   );
 }

@@ -24,12 +24,4 @@ export default function Recipes({ recipes, filter, handleFavourites, isFavourite
   
   
   
-//   {recipesTab ? recipesTab.map((recipe, index) => 
-//     <Recipe 
-//       recipe={recipe}
-//       handleFavourites={handleFavourites}
-//       isFavourite={isFavourite}
-//       key={index}  />)
-//   : console.log("je suis là")
-// }
-// {recipesTab === [] && <h4>Aucun résultats</h4>}
+

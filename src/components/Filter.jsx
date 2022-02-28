@@ -1,11 +1,11 @@
 import React from "react"; 
 
 
-export default function Filter ({category, onFilterTerm}) {
+export default function Filter ({category, onFilterTerm, filter}) {
 
-//changement de couleur lorsque le filtre est sélectionné
 
-    return <button className = "filter" onClick={()=>onFilterTerm(category)}>{category}</button>
+
+    return <button className = {category === filter ? "filter active" : "filter"} onClick={()=>onFilterTerm(category)}>{category}</button>
 
 
 

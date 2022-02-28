@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function SearchBar({ term, onChange, handleSearch}) {
   
   const pressEnter = (e) => {
@@ -11,13 +12,13 @@ export default function SearchBar({ term, onChange, handleSearch}) {
 
   return (
     <div className="searchField">
-      <input 
-        className="searchField_field" 
-        type="text" 
-        value={term} 
-        onInput={(e) => onChange(e.target.value)} 
-        onKeyUp={pressEnter} 
-        placeholder="Chercher une recette" 
-      />
+        <input 
+          className="searchField_field" 
+          type="text" 
+          value={term} 
+          onInput={(e) => onChange(e.target.value)} 
+          onKeyUp={pressEnter} 
+          placeholder="Chercher une recette" 
+        />
     </div>
   )}

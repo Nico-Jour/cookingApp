@@ -15,7 +15,7 @@ export default function Main({recipes, favourites, isFavourite, handleFavourites
     <div className="main">
      
      
-      <Filters recipes={recipes} onFilterTerm={onFilterTerm} />
+      <Filters recipes={recipes} onFilterTerm={onFilterTerm} filter={filter}/>
       <Recipes recipes={recipes} favourites={favourites} handleFavourites={handleFavourites} filter={filter} isFavourite={isFavourite} />
       
       
