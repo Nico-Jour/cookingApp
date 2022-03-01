@@ -12,7 +12,7 @@ export default function RecipeDetails({ recipes }){
 
     return (
         <div>
-            <Link to="/"><p className= "backButton"> &lt; back to results </p></Link>
+            <Link to="/cookingApp"><p className= "backButton"> &lt; back to results </p></Link>
             <Title selRecipe={selRecipe} />
             <Informations selRecipe={selRecipe} />
               

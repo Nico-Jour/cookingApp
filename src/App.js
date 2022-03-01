@@ -100,13 +100,13 @@ console.log(store.recipes);
     <div >
       <Routes>
         <Route 
-          path="/cooking/" 
+          path="/cookingApp" 
           element={<Header onChange={handleChange} 
           term={store.recipes.term} 
           handleSearch={handleSearch} />}>
             
           <Route 
-            path="/cooking/home" 
+            path="" 
             element={ 
               <Main 
                 recipes={store}
@@ -119,7 +119,7 @@ console.log(store.recipes);
             } 
           />
           <Route 
-            path="/cooking/recette/:idMeal" 
+            path="/cookingApp/recette/:idMeal" 
             element={ <RecipeDetails recipes={store} /> } 
           />
         </Route>

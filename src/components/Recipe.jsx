@@ -7,7 +7,7 @@ export default function Recipe({recipe, handleFavourites, isFavourite}) {
 
 
   return <div className="recipeThumb">
-      <Link to={`/cooking/recette/${recipe.idMeal}`}>
+      <Link to={`/cookingApp/recette/${recipe.idMeal}`}>
       <img src={recipe.strMealThumb} alt="ilustration" className="imageThumb" />
       </Link>
      <h2 className="recipeName">{recipe.strMeal}</h2>
