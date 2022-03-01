@@ -9,23 +9,13 @@ export default function Informations({selRecipe}) {
         setStateTab((prevState) => x);
     }
 
-   
-
-
-
-// for (let i=1; selRecipe[`strIngredient${i}`].length > 0 ; i++){
-//     `${selRecipe[`strIngredient${i}`]} - ${selRecipe[`strMeasure${i}`]}` ;
-// }
-
-
-
 
 
   return (
     <div className='tabs-container'>
             <div className="tabs">
-                    <div className={stateTab === 1 ? 'onglets active' : 'onglets'} onClick={()=>handleTab(1)}>Ingrédients</div>
-                    <div className={stateTab === 2 ? 'onglets active' : 'onglets'} onClick={()=>handleTab(2)}>Recette</div>
+                    <div className={stateTab === 1 ? 'onglets activeTab' : 'onglets'} onClick={()=>handleTab(1)}>Ingrédients</div>
+                    <div className={stateTab === 2 ? 'onglets activeTab' : 'onglets'} onClick={()=>handleTab(2)}>Recette</div>
             </div>
             <div className="container">
                 {stateTab === 1 ?

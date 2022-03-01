@@ -22,7 +22,7 @@ body{
 .main{
     width: 100%; 
     height: auto;
-    background-color: whitesmoke;
+    background-color: white;
     margin-top: 2rem;
 }
 .recipesContainer{
@@ -145,6 +145,12 @@ a:-webkit-any-link .backButton{
     border-bottom: solid 3px;
 }
 .active {
+    background: white;
+    color: orange;
+    border: solid 1px;
+    border-color: orange;
+}
+.activeTab {
     background: white;
     color: orange;
 }
