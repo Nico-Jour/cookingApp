@@ -9,9 +9,9 @@ export default function SearchBar({ term, onChange, handleSearch}) {
   const pressEnter = (e) => {
     if(e.keyCode === 13){
         e.preventDefault();
-       navigate("/cookingApp");
         console.log(term);
         handleSearch();
+        navigate("/cookingApp");
     }}
 
 
