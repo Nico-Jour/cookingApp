@@ -1,11 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 
 export default function SearchBar({ term, onChange, handleSearch}) {
   
+  let navigate=useNavigate();
+
   const pressEnter = (e) => {
     if(e.keyCode === 13){
         e.preventDefault();
+       navigate("/cookingApp");
+        console.log(term);
         handleSearch();
     }}
 

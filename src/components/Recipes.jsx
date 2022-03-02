@@ -6,8 +6,9 @@ export default function Recipes({ recipes, filter, handleFavourites, isFavourite
   
   const filteredRecipes= recipes.recipes.recipes.filter((recipe)=> recipe.strCategory.toLowerCase() === filter.toLowerCase());
   const recipesTab = filter === "All" ? recipes.recipes.recipes : filteredRecipes
-  console.log(recipesTab);
-  console.log(recipesTab=== []);
+  
+  
+  console.log(recipesTab)
 
     return (
     <div className="recipesContainer">
