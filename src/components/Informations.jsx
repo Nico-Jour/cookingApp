@@ -22,16 +22,18 @@ export default function Informations({selRecipe}) {
                 <div className= "ingredientQuantite">
                 <ul className="ingredients">
 
-                    {Object.keys(selRecipe).filter(key => key.startsWith('strIngredient')).map((ingredient,index)=> {
+                    {Object.keys(selRecipe).filter(key => key.startsWith('strIngredient')).map((ingredient,index) => {
                         if (selRecipe[ingredient] !== ""){
                             return <li className="ingredient" key={index}> - {selRecipe[ingredient]}</li>
                         }
+                        return "";
                     })}
                 </ul>
                 <ul>
                     {Object.keys(selRecipe).filter(key => key.startsWith('strMeasure')).map((quantite, index) => {
                         if (selRecipe[quantite] !== "") {
                         return <li className="quantite" key={index}>{selRecipe[quantite]}</li>}
+                        return "";
                         })}
                 
                 </ul>
