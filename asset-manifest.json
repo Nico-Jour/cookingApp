@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cookingApp/static/css/main.1740408a.css",
+    "main.js": "/cookingApp/static/js/main.a595ab3d.js",
+    "static/media/popotte.png": "/cookingApp/static/media/popotte.f3aed97bd392e2486486.png",
+    "index.html": "/cookingApp/index.html",
+    "main.a595ab3d.js.map": "/cookingApp/static/js/main.a595ab3d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1740408a.css",
+    "static/js/main.a595ab3d.js"
+  ]
+}
